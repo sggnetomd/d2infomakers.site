@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D2 Infomakers — Relationship content & guidance</title>
-<meta name="description" content="D2 Infomakers is a relationship content company. Articles, guides, and tools that help people communicate better, connect deeper, and grow together.">
+<title>D2 Infomakers — Digital products & wellness, promoted responsibly</title>
+<meta name="description" content="D2 Infomakers is an independent digital marketing company that promotes information products, apps, and nutraceutical supplements from trusted brands — with honest advertising and full transparency.">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +29,8 @@
   .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
   .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
   .eyebrow{font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  /* placeholder highlight — REPLACE every yellow token before publishing */
+  .ph{background:#fff3bf;color:#92400e;padding:0 5px;border-radius:4px;font-weight:600;white-space:nowrap}
 
   /* reveal on scroll */
   .js .r{opacity:0;transform:translateY(42px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
@@ -44,32 +46,38 @@
   .nav-in{width:100%;max-width:1000px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:600;letter-spacing:-.02em}
   .brand svg{width:26px;height:26px}
+  .nav-right{display:flex;align-items:center;gap:26px}
   .navlinks{display:flex;gap:32px;font-size:13px;font-weight:400;color:var(--ink-2)}
   .navlinks a{transition:color .2s}.navlinks a:hover{color:var(--ink)}
-  @media(max-width:720px){.navlinks{display:none}}
+  /* language toggle — right corner */
+  .lang{display:inline-flex;align-items:center;gap:2px;background:#f1efec;border:1px solid var(--line);border-radius:999px;padding:3px}
+  .lang button{font-family:inherit;border:0;background:transparent;color:var(--ink-2);font-size:12px;font-weight:700;letter-spacing:.03em;padding:5px 11px;border-radius:999px;cursor:pointer;line-height:1;transition:color .2s,background .25s,box-shadow .2s}
+  .lang button:hover{color:var(--ink)}
+  .lang button[aria-pressed="true"]{color:#fff;background:var(--grad);box-shadow:0 2px 6px rgba(224,90,110,.35)}
+  @media(max-width:720px){.navlinks{display:none}.nav-right{gap:0}}
 
   /* HERO */
-  .hero{position:relative;overflow:hidden;text-align:center;padding:120px 0 130px}
+  .hero{position:relative;overflow:hidden;text-align:center;padding:56px 0 48px}
   .hero .orb{position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);width:760px;height:560px;
     background:radial-gradient(closest-side,rgba(240,168,104,.30),rgba(224,90,110,.22) 45%,transparent 72%);
     filter:blur(24px);z-index:0;pointer-events:none}
   .hero .in{position:relative;z-index:1}
   .hero .eyebrow{color:#a08;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .hero h1{font-size:clamp(44px,8.4vw,104px);font-weight:700;line-height:1.02;letter-spacing:-.035em;margin:20px 0 26px}
-  .hero .lead{font-size:clamp(19px,2.6vw,26px);font-weight:500;color:var(--ink-2);max-width:640px;margin:0 auto;letter-spacing:-.02em;line-height:1.35}
-  .hero .cta{display:inline-block;margin-top:34px;font-size:19px;font-weight:500;color:var(--rose);letter-spacing:-.01em}
+  .hero h1{font-size:clamp(38px,6.4vw,66px);font-weight:700;line-height:1.05;letter-spacing:-.035em;margin:14px 0 18px}
+  .hero .lead{font-size:clamp(19px,2.6vw,26px);font-weight:500;color:var(--ink-2);max-width:660px;margin:0 auto;letter-spacing:-.02em;line-height:1.35}
+  .hero .cta{display:inline-block;margin-top:22px;font-size:18px;font-weight:500;color:var(--rose);letter-spacing:-.01em}
   .hero .cta:hover{opacity:.72}
 
   /* BIG STATEMENT */
-  .statement{padding:130px 0;text-align:center}
-  .statement p{font-size:clamp(30px,5.2vw,60px);font-weight:600;line-height:1.12;letter-spacing:-.03em;max-width:16ch;margin:0 auto}
-  .statement .sub{font-size:clamp(17px,2.2vw,21px);font-weight:500;color:var(--ink-2);max-width:44ch;margin:26px auto 0;letter-spacing:-.01em}
+  .statement{padding:52px 0;text-align:center}
+  .statement p{font-size:clamp(24px,4.2vw,40px);font-weight:600;line-height:1.16;letter-spacing:-.03em;max-width:22ch;margin:0 auto}
+  .statement .sub{font-size:clamp(16px,2vw,19px);font-weight:500;color:var(--ink-2);max-width:52ch;margin:16px auto 0;letter-spacing:-.01em}
 
   /* SECTION HEAD */
-  .sh{text-align:center;max-width:640px;margin:0 auto 60px}
+  .sh{text-align:center;max-width:640px;margin:0 auto 34px}
   .sh .eyebrow{color:var(--rose)}
-  .sh h2{font-size:clamp(32px,5vw,56px);font-weight:700;line-height:1.08;letter-spacing:-.03em;margin-top:12px}
-  section.blk{padding:120px 0}
+  .sh h2{font-size:clamp(28px,4.2vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.03em;margin-top:10px}
+  section.blk{padding:56px 0}
 
   /* WHAT WE DO */
   .do-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -79,20 +87,20 @@
   .do h3{font-size:24px;font-weight:600;letter-spacing:-.02em;margin:14px 0 10px}
   .do p{font-size:16px;color:var(--ink-2);line-height:1.55;letter-spacing:-.01em}
 
-  /* TOPICS GALLERY */
+  /* CATEGORIES GALLERY */
   .topics{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .gallery{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 30px;margin:0 -24px;
     -ms-overflow-style:none;scrollbar-width:none}
   .gallery::-webkit-scrollbar{display:none}
-  .gcard{scroll-snap-align:center;flex:0 0 320px;background:#fff;border:1px solid var(--line);border-radius:26px;
-    padding:32px 30px;min-height:290px;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .gcard{scroll-snap-align:center;flex:0 0 300px;background:#fff;border:1px solid var(--line);border-radius:22px;
+    padding:26px 26px;min-height:210px;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
   .gcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(29,29,31,.10)}
-  .gcard .ic{width:60px;height:60px;border-radius:18px;background:linear-gradient(135deg,#FBEEF0,#FCEBD9);display:grid;place-items:center;font-size:30px;margin-bottom:22px}
+  .gcard .ic{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,#FBEEF0,#FCEBD9);display:grid;place-items:center;font-size:26px;margin-bottom:16px}
   .gcard h4{font-size:23px;font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
   .gcard p{font-size:16px;color:var(--ink-2);line-height:1.5;letter-spacing:-.01em}
   .g-hint{text-align:center;font-size:13.5px;color:var(--ink-2);margin-top:6px}
 
-  /* APPROACH — dark full-bleed */
+  /* STANDARDS — dark full-bleed */
   .dark{background:#000;color:#f5f5f7}
   .dark .sh h2{color:#f5f5f7}
   .dark .sh .eyebrow{color:var(--amber)}
@@ -106,14 +114,15 @@
   .princ p{font-size:15.5px;color:#a1a1a6;line-height:1.55;letter-spacing:-.01em}
 
   /* ABOUT */
-  .about{text-align:center;padding:140px 0}
-  .about h2{font-size:clamp(30px,5vw,58px);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:18ch;margin:0 auto}
-  .about p{font-size:clamp(17px,2.2vw,21px);color:var(--ink-2);max-width:52ch;margin:28px auto 0;line-height:1.6;letter-spacing:-.01em}
+  .about{text-align:center;padding:60px 0}
+  .about h2{font-size:clamp(30px,5vw,58px);font-weight:700;line-height:1.1;letter-spacing:-.03em;max-width:20ch;margin:0 auto}
+  .about p{font-size:clamp(17px,2.2vw,21px);color:var(--ink-2);max-width:56ch;margin:28px auto 0;line-height:1.6;letter-spacing:-.01em}
 
   /* CONTACT */
-  .contact{background:var(--bg-warm);border-top:1px solid var(--line);text-align:center;padding:120px 0}
+  .contact{background:var(--bg-warm);border-top:1px solid var(--line);text-align:center;padding:60px 0}
   .contact h2{font-size:clamp(34px,5.4vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.05}
-  .contact p{font-size:19px;color:var(--ink-2);margin:18px auto 30px;max-width:40ch;letter-spacing:-.01em}
+  .contact p{font-size:19px;color:var(--ink-2);margin:18px auto 24px;max-width:46ch;letter-spacing:-.01em}
+  .contact .detail{font-size:15px;color:var(--ink-2);margin-top:22px;line-height:1.8}
   .pill{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-size:17px;font-weight:500;
     padding:15px 34px;border-radius:999px;letter-spacing:-.01em;transition:transform .3s var(--ease),background .3s}
   .pill:hover{transform:scale(1.03);background:#000}
@@ -121,10 +130,12 @@
   /* FOOTER */
   footer{background:var(--bg-2);border-top:1px solid var(--line);padding:44px 0 56px;color:var(--ink-2)}
   .foot-top{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
-  .foot-links{display:flex;gap:26px;font-size:13.5px}
+  .foot-links{display:flex;gap:26px;font-size:13.5px;flex-wrap:wrap}
   .foot-links a:hover{color:var(--ink)}
-  .disclaimer{font-size:12px;line-height:1.6;margin-top:20px;max-width:680px}
-  .copy{font-size:12px;margin-top:12px}
+  .legal{margin-top:22px;max-width:760px}
+  .legal h5{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);margin:18px 0 6px}
+  .legal p{font-size:12px;line-height:1.65}
+  .copy{font-size:12px;margin-top:20px}
 </style>
 </head>
 <body id="top">
@@ -136,13 +147,20 @@
       <svg viewBox="0 0 40 40" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E05A6E"/><stop offset="1" stop-color="#F0A868"/></linearGradient></defs><circle cx="15" cy="20" r="11" stroke="url(#g)" stroke-width="3"/><circle cx="25" cy="20" r="11" stroke="url(#g)" stroke-width="3" opacity=".6"/></svg>
       D2&nbsp;Infomakers
     </a>
-    <nav class="navlinks">
-      <a href="#what">What we do</a>
-      <a href="#topics">Topics</a>
-      <a href="#approach">Approach</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="navlinks">
+        <a href="#what" data-i18n="nav_what">What we do</a>
+        <a href="#categories" data-i18n="nav_categories">Categories</a>
+        <a href="#standards" data-i18n="nav_standards">Standards</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / Idioma / Idioma">
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -151,58 +169,58 @@
   <div class="orb"></div>
   <div class="wrap in">
     <p class="eyebrow r">D2 Infomakers</p>
-    <h1 class="r d1">Good relationships<br>aren't luck.<br><span class="grad-text">They're built.</span></h1>
-    <p class="lead r d2">A content hub of articles, guides, and tools — helping people communicate, connect, and grow together.</p>
-    <a href="#topics" class="cta r d3">Explore the topics&nbsp;&rsaquo;</a>
+    <h1 class="r d1" data-i18n="hero_h1">We bring good products<br>to the people<br><span class="grad-text">who were looking for them.</span></h1>
+    <p class="lead r d2" data-i18n="hero_lead">An independent digital marketing company promoting information products, apps, and wellness supplements from trusted brands — responsibly, and with full transparency.</p>
+    <a href="#what" class="cta r d3" data-i18n="hero_cta">How we work&nbsp;&rsaquo;</a>
   </div>
 </section>
 
 <!-- ═══ STATEMENT ═══ -->
 <section class="statement">
   <div class="wrap">
-    <p class="r">Every idea we publish exists to help two people understand each other a little better.</p>
-    <p class="sub r d1">No gimmicks. No games. Just thoughtful, practical content about love and connection.</p>
+    <p class="r" data-i18n="stmt_main">Every campaign we run exists to put a genuinely useful product in front of the right person.</p>
+    <p class="sub r d1" data-i18n="stmt_sub">We are an affiliate marketing company — we promote products, we don't manufacture them. No hype, no unsupported claims, clear disclosure every time.</p>
   </div>
 </section>
 
 <!-- ═══ WHAT WE DO ═══ -->
 <section id="what" class="blk">
   <div class="wrap">
-    <div class="sh r"><span class="eyebrow">What we do</span><h2>Big ideas, made doable.</h2></div>
+    <div class="sh r"><span class="eyebrow" data-i18n="nav_what">What we do</span><h2 data-i18n="wd_h2">Marketing, done honestly.</h2></div>
     <div class="do-grid">
-      <div class="do r d1"><div class="n">01</div><h3>We publish</h3><p>In-depth articles and guides on the moments that matter — from first dates to decades together.</p></div>
-      <div class="do r d2"><div class="n">02</div><h3>We simplify</h3><p>Research and real experience, turned into clear steps you can use in your day-to-day.</p></div>
-      <div class="do r d3"><div class="n">03</div><h3>We support</h3><p>Gentle tools and experiences that help you keep showing up for the people you love.</p></div>
+      <div class="do r d1"><div class="n">01</div><h3 data-i18n="wd_1_h">We discover</h3><p data-i18n="wd_1_p">We select proven digital programs, apps, and wellness products from established brands and networks worth putting our name behind.</p></div>
+      <div class="do r d2"><div class="n">02</div><h3 data-i18n="wd_2_h">We promote</h3><p data-i18n="wd_2_p">We run advertising and educational content that connects each product with the audience already searching for it — with disclosures front and center.</p></div>
+      <div class="do r d3"><div class="n">03</div><h3 data-i18n="wd_3_h">We support</h3><p data-i18n="wd_3_p">Clear information and honest expectations before purchase, and responsive help routing every customer to the right place after it.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ TOPICS ═══ -->
-<section id="topics" class="topics blk">
+<!-- ═══ CATEGORIES ═══ -->
+<section id="categories" class="topics blk">
   <div class="wrap">
-    <div class="sh r"><span class="eyebrow">The hub</span><h2>What we write about.</h2></div>
+    <div class="sh r"><span class="eyebrow" data-i18n="cat_eyebrow">What we promote</span><h2 data-i18n="cat_h2">The products we stand behind.</h2></div>
   </div>
   <div class="gallery r">
-    <div class="gcard"><div class="ic">💬</div><h4>Communication</h4><p>Saying what you mean — and truly hearing what they mean.</p></div>
-    <div class="gcard"><div class="ic">🤝</div><h4>Trust &amp; Connection</h4><p>Building the safety and closeness that let love grow.</p></div>
-    <div class="gcard"><div class="ic">🌱</div><h4>Starting Something New</h4><p>Dating and early relationships — without the games.</p></div>
-    <div class="gcard"><div class="ic">⚖️</div><h4>Navigating Conflict</h4><p>Learning to disagree without disconnecting.</p></div>
-    <div class="gcard"><div class="ic">🔧</div><h4>Repair &amp; Rebuild</h4><p>Finding your way back to each other after hard moments.</p></div>
-    <div class="gcard"><div class="ic">💞</div><h4>Growing Together</h4><p>Keeping love alive and evolving for the long run.</p></div>
+    <div class="gcard"><div class="ic">📱</div><h4 data-i18n="cat_1_h">Apps &amp; Digital Programs</h4><p data-i18n="cat_1_p">Guided apps and step-by-step digital programs for health, habits, and personal growth.</p></div>
+    <div class="gcard"><div class="ic">💊</div><h4 data-i18n="cat_2_h">Nutraceutical Supplements</h4><p data-i18n="cat_2_p">Vitamins, botanicals, and wellness supplements produced by established manufacturers.</p></div>
+    <div class="gcard"><div class="ic">📚</div><h4 data-i18n="cat_3_h">Educational Content</h4><p data-i18n="cat_3_p">Guides and information that help people make informed, confident choices.</p></div>
+    <div class="gcard"><div class="ic">🏷️</div><h4 data-i18n="cat_4_h">Trusted Partners</h4><p data-i18n="cat_4_p">We promote through reputable product owners and networks, including BuyGoods.</p></div>
+    <div class="gcard"><div class="ic">✅</div><h4 data-i18n="cat_5_h">Compliant Advertising</h4><p data-i18n="cat_5_p">FTC-aligned affiliate disclosures and responsible claims on every page we run.</p></div>
+    <div class="gcard"><div class="ic">🤝</div><h4 data-i18n="cat_6_h">Customer Care</h4><p data-i18n="cat_6_p">We stand behind what we recommend and help customers reach support and refunds.</p></div>
   </div>
-  <p class="g-hint r">Scroll to explore &rarr;</p>
+  <p class="g-hint r" data-i18n="cat_hint">Scroll to explore &rarr;</p>
 </section>
 
-<!-- ═══ APPROACH (dark) ═══ -->
-<section id="approach" class="dark blk" style="position:relative;overflow:hidden">
+<!-- ═══ STANDARDS (dark) ═══ -->
+<section id="standards" class="dark blk" style="position:relative;overflow:hidden">
   <div class="glow"></div>
   <div class="wrap">
-    <div class="sh r"><span class="eyebrow">Our approach</span><h2>Held to a simple standard.</h2></div>
+    <div class="sh r"><span class="eyebrow" data-i18n="std_eyebrow">Our standards</span><h2 data-i18n="std_h2">Built for trust and compliance.</h2></div>
     <div class="princ-grid">
-      <div class="princ r d1"><div class="k">💗</div><h4>Respectful</h4><p>Never manipulation, pressure, or "tricks." Real relationships are built on respect — so is our content.</p></div>
-      <div class="princ r d2"><div class="k">⚡</div><h4>Practical</h4><p>Ideas you can use today, not vague advice. Small steps beat grand theories.</p></div>
-      <div class="princ r d3"><div class="k">🫶</div><h4>Human</h4><p>No shame, no "perfect couple" myth. We write for real people and real, messy, beautiful relationships.</p></div>
-      <div class="princ r d4"><div class="k">🕯️</div><h4>Honest</h4><p>Grounded and calm, never hype. If we're not sure, we say so.</p></div>
+      <div class="princ r d1"><div class="k">🔍</div><h4 data-i18n="std_1_h">Transparent</h4><p data-i18n="std_1_p">We are an independent affiliate and may earn a commission when you buy through our links. We always disclose it.</p></div>
+      <div class="princ r d2"><div class="k">⚖️</div><h4 data-i18n="std_2_h">Compliant</h4><p data-i18n="std_2_p">We follow FTC guidance and the rules of every network we work with. No unsupported claims, ever.</p></div>
+      <div class="princ r d3"><div class="k">🫶</div><h4 data-i18n="std_3_h">Honest</h4><p data-i18n="std_3_p">Realistic expectations over hype. Results vary from person to person, and we say so plainly.</p></div>
+      <div class="princ r d4"><div class="k">🛡️</div><h4 data-i18n="std_4_h">Responsible</h4><p data-i18n="std_4_p">Health products carry proper disclaimers, and we encourage everyone to consult a professional first.</p></div>
     </div>
   </div>
 </section>
@@ -210,19 +228,20 @@
 <!-- ═══ ABOUT ═══ -->
 <section id="about" class="about">
   <div class="wrap">
-    <span class="eyebrow grad-text r">About us</span>
-    <h2 class="r d1">We're a small team with one belief: anyone can learn to love a little better.</h2>
-    <p class="r d2">D2 Infomakers is a group of writers, editors, and product people who care about helping people love better — meeting them where they are, with warmth, patience, and respect for how hard, and how worth it, connection can be.</p>
+    <span class="eyebrow grad-text r" data-i18n="about_eyebrow">About us</span>
+    <h2 class="r d1" data-i18n="about_h2">An independent marketing company that takes the fine print seriously.</h2>
+    <p class="r d2" data-i18n="about_p">D2 Infomakers (S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA) is a digital performance-marketing company. We promote information products, apps, and nutraceutical supplements as an affiliate partner of established brands and networks. We are not the manufacturer, author, or seller of record of the products we promote — purchases are fulfilled and billed by each product's owner or its authorized retailer.</p>
   </div>
 </section>
 
 <!-- ═══ CONTACT ═══ -->
 <section id="contact" class="contact">
   <div class="wrap">
-    <span class="eyebrow grad-text r">Get in touch</span>
-    <h2 class="r d1" style="margin-top:14px">Say hello.</h2>
-    <p class="r d2">Questions, press, partnerships, or just want to talk about relationship content? We'd love to hear from you.</p>
-    <a class="pill r d3" href="mailto:contact@d2infomakers.com">Contact us</a>
+    <span class="eyebrow grad-text r" data-i18n="contact_eyebrow">Get in touch</span>
+    <h2 class="r d1" style="margin-top:14px" data-i18n="contact_h2">Say hello.</h2>
+    <p class="r d2" data-i18n="contact_p">Questions about a product, a purchase, a refund, partnerships, or compliance? We read every message and route it to the right place.</p>
+    <a class="pill r d3" href="mailto:d2.infomakers@gmail.com" data-i18n="contact_pill">Contact us</a>
+    <div class="detail r d4" data-i18n="contact_detail">S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70<br>Av. Nove de Julho, 873 — Jardim Apolo I<br>São José dos Campos – SP, 12243-000, Brazil<br>Email: d2.infomakers@gmail.com</div>
   </div>
 </section>
 
@@ -235,15 +254,244 @@
         D2&nbsp;Infomakers
       </a>
       <div class="foot-links">
-        <a href="#what">What we do</a><a href="#topics">Topics</a><a href="#about">About</a><a href="mailto:contact@d2infomakers.com">Contact</a>
+        <a href="/privacy" data-i18n="foot_privacy">Privacy Policy</a>
+        <a href="/terms" data-i18n="foot_terms">Terms of Service</a>
+        <a href="/refund" data-i18n="foot_refund">Refund Policy</a>
+        <a href="mailto:d2.infomakers@gmail.com" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
-    <p class="disclaimer">D2 Infomakers publishes educational content about relationships and personal connection. Our content is for informational purposes and is not a substitute for professional therapy, counseling, or medical advice.</p>
-    <p class="copy">© 2026 D2 Infomakers. All rights reserved.</p>
+
+    <div class="legal">
+      <h5 data-i18n="legal_aff_h">Affiliate disclosure</h5>
+      <p data-i18n="legal_aff_p">D2 Infomakers is an independent affiliate and marketing partner. We promote third-party products and may earn a commission when a purchase is made through our links or campaigns, at no additional cost to you. We are not the manufacturer, author, or seller of record of the products we promote; orders are fulfilled, billed, and supported by the respective product owner or its authorized retailer (for example, BuyGoods).</p>
+
+      <h5 data-i18n="legal_health_h">Health &amp; supplement disclaimer</h5>
+      <p data-i18n="legal_health_p">Statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease. The information on this site is for educational purposes only and is not a substitute for professional medical advice. Always consult a qualified healthcare professional before starting any supplement, program, or change to your routine.</p>
+
+      <h5 data-i18n="legal_results_h">Results disclaimer</h5>
+      <p data-i18n="legal_results_p">Individual results vary and are not guaranteed. Any testimonials, examples, or outcomes referenced in products we promote are not a promise or guarantee that you will achieve the same results.</p>
+
+      <p class="copy" data-i18n="copy">© 2026 S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA · CNPJ 52.773.851/0001-70. D2 Infomakers is a brand operated by this company. All rights reserved. All trademarks and brands are the property of their respective owners.</p>
+    </div>
   </div>
 </footer>
 
 <script>
+  // ── i18n dictionary (EN canonical; PT/ES injected below) ──
+  var I18N = { en: {
+    nav_what:`What we do`,
+    nav_categories:`Categories`,
+    nav_standards:`Standards`,
+    nav_about:`About`,
+    nav_contact:`Contact`,
+    hero_h1:`We bring good products<br>to the people<br><span class="grad-text">who were looking for them.</span>`,
+    hero_lead:`An independent digital marketing company promoting information products, apps, and wellness supplements from trusted brands — responsibly, and with full transparency.`,
+    hero_cta:`How we work ›`,
+    stmt_main:`Every campaign we run exists to put a genuinely useful product in front of the right person.`,
+    stmt_sub:`We are an affiliate marketing company — we promote products, we don't manufacture them. No hype, no unsupported claims, clear disclosure every time.`,
+    wd_h2:`Marketing, done honestly.`,
+    wd_1_h:`We discover`,
+    wd_1_p:`We select proven digital programs, apps, and wellness products from established brands and networks worth putting our name behind.`,
+    wd_2_h:`We promote`,
+    wd_2_p:`We run advertising and educational content that connects each product with the audience already searching for it — with disclosures front and center.`,
+    wd_3_h:`We support`,
+    wd_3_p:`Clear information and honest expectations before purchase, and responsive help routing every customer to the right place after it.`,
+    cat_eyebrow:`What we promote`,
+    cat_h2:`The products we stand behind.`,
+    cat_1_h:`Apps & Digital Programs`,
+    cat_1_p:`Guided apps and step-by-step digital programs for health, habits, and personal growth.`,
+    cat_2_h:`Nutraceutical Supplements`,
+    cat_2_p:`Vitamins, botanicals, and wellness supplements produced by established manufacturers.`,
+    cat_3_h:`Educational Content`,
+    cat_3_p:`Guides and information that help people make informed, confident choices.`,
+    cat_4_h:`Trusted Partners`,
+    cat_4_p:`We promote through reputable product owners and networks, including BuyGoods.`,
+    cat_5_h:`Compliant Advertising`,
+    cat_5_p:`FTC-aligned affiliate disclosures and responsible claims on every page we run.`,
+    cat_6_h:`Customer Care`,
+    cat_6_p:`We stand behind what we recommend and help customers reach support and refunds.`,
+    cat_hint:`Scroll to explore →`,
+    std_eyebrow:`Our standards`,
+    std_h2:`Built for trust and compliance.`,
+    std_1_h:`Transparent`,
+    std_1_p:`We are an independent affiliate and may earn a commission when you buy through our links. We always disclose it.`,
+    std_2_h:`Compliant`,
+    std_2_p:`We follow FTC guidance and the rules of every network we work with. No unsupported claims, ever.`,
+    std_3_h:`Honest`,
+    std_3_p:`Realistic expectations over hype. Results vary from person to person, and we say so plainly.`,
+    std_4_h:`Responsible`,
+    std_4_p:`Health products carry proper disclaimers, and we encourage everyone to consult a professional first.`,
+    about_eyebrow:`About us`,
+    about_h2:`An independent marketing company that takes the fine print seriously.`,
+    about_p:`D2 Infomakers (S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA) is a digital performance-marketing company. We promote information products, apps, and nutraceutical supplements as an affiliate partner of established brands and networks. We are not the manufacturer, author, or seller of record of the products we promote — purchases are fulfilled and billed by each product's owner or its authorized retailer.`,
+    contact_eyebrow:`Get in touch`,
+    contact_h2:`Say hello.`,
+    contact_p:`Questions about a product, a purchase, a refund, partnerships, or compliance? We read every message and route it to the right place.`,
+    contact_pill:`Contact us`,
+    contact_detail:`S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70<br>Av. Nove de Julho, 873 — Jardim Apolo I<br>São José dos Campos – SP, 12243-000, Brazil<br>Email: d2.infomakers@gmail.com`,
+    foot_privacy:`Privacy Policy`,
+    foot_terms:`Terms of Service`,
+    foot_refund:`Refund Policy`,
+    legal_aff_h:`Affiliate disclosure`,
+    legal_aff_p:`D2 Infomakers is an independent affiliate and marketing partner. We promote third-party products and may earn a commission when a purchase is made through our links or campaigns, at no additional cost to you. We are not the manufacturer, author, or seller of record of the products we promote; orders are fulfilled, billed, and supported by the respective product owner or its authorized retailer (for example, BuyGoods).`,
+    legal_health_h:`Health & supplement disclaimer`,
+    legal_health_p:`Statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease. The information on this site is for educational purposes only and is not a substitute for professional medical advice. Always consult a qualified healthcare professional before starting any supplement, program, or change to your routine.`,
+    legal_results_h:`Results disclaimer`,
+    legal_results_p:`Individual results vary and are not guaranteed. Any testimonials, examples, or outcomes referenced in products we promote are not a promise or guarantee that you will achieve the same results.`,
+    copy:`© 2026 S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA · CNPJ 52.773.851/0001-70. D2 Infomakers is a brand operated by this company. All rights reserved. All trademarks and brands are the property of their respective owners.`
+  } };
+  I18N.pt = {
+  "nav_what": "O que fazemos",
+  "nav_categories": "Categorias",
+  "nav_standards": "Padrões",
+  "nav_about": "Sobre",
+  "nav_contact": "Contato",
+  "hero_h1": "Levamos bons produtos<br>às pessoas<br><span class=\"grad-text\">que estavam à procura deles.</span>",
+  "hero_lead": "Uma empresa independente de marketing digital que promove produtos de informação, aplicativos e suplementos de bem-estar de marcas confiáveis — com responsabilidade e total transparência.",
+  "hero_cta": "Como trabalhamos ›",
+  "stmt_main": "Cada campanha que realizamos existe para colocar um produto genuinamente útil diante da pessoa certa.",
+  "stmt_sub": "Somos uma empresa de marketing de afiliados — promovemos produtos, não os fabricamos. Sem sensacionalismo, sem alegações não comprovadas, com divulgação clara sempre.",
+  "wd_h2": "Marketing, feito com honestidade.",
+  "wd_1_h": "Descobrimos",
+  "wd_1_p": "Selecionamos programas digitais comprovados, aplicativos e produtos de bem-estar de marcas e redes consolidadas que valem o nosso nome.",
+  "wd_2_h": "Promovemos",
+  "wd_2_p": "Veiculamos publicidade e conteúdo educativo que conecta cada produto ao público que já o procura — com as divulgações em primeiro plano.",
+  "wd_3_h": "Damos suporte",
+  "wd_3_p": "Informações claras e expectativas honestas antes da compra, e atendimento ágil que direciona cada cliente ao lugar certo depois dela.",
+  "cat_eyebrow": "O que promovemos",
+  "cat_h2": "Os produtos pelos quais respondemos.",
+  "cat_1_h": "Aplicativos e Programas Digitais",
+  "cat_1_p": "Aplicativos guiados e programas digitais passo a passo para saúde, hábitos e crescimento pessoal.",
+  "cat_2_h": "Suplementos Nutracêuticos",
+  "cat_2_p": "Vitaminas, extratos botânicos e suplementos de bem-estar produzidos por fabricantes consolidados.",
+  "cat_3_h": "Conteúdo Educativo",
+  "cat_3_p": "Guias e informações que ajudam as pessoas a fazer escolhas conscientes e seguras.",
+  "cat_4_h": "Parceiros Confiáveis",
+  "cat_4_p": "Promovemos por meio de proprietários de produtos e redes de boa reputação, incluindo a BuyGoods.",
+  "cat_5_h": "Publicidade em Conformidade",
+  "cat_5_p": "Divulgações de afiliado alinhadas à FTC (Comissão Federal de Comércio dos EUA) e alegações responsáveis em cada página que veiculamos.",
+  "cat_6_h": "Atendimento ao Cliente",
+  "cat_6_p": "Respondemos pelo que recomendamos e ajudamos os clientes a acessar suporte e reembolsos.",
+  "cat_hint": "Role para explorar →",
+  "std_eyebrow": "Nossos padrões",
+  "std_h2": "Construído para confiança e conformidade.",
+  "std_1_h": "Transparente",
+  "std_1_p": "Somos um afiliado independente e podemos receber uma comissão quando você compra por meio dos nossos links. Nós sempre divulgamos isso.",
+  "std_2_h": "Em conformidade",
+  "std_2_p": "Seguimos as orientações da FTC e as regras de cada rede com a qual trabalhamos. Nunca fazemos alegações não comprovadas.",
+  "std_3_h": "Honesto",
+  "std_3_p": "Expectativas realistas acima do sensacionalismo. Os resultados variam de pessoa para pessoa, e dizemos isso com clareza.",
+  "std_4_h": "Responsável",
+  "std_4_p": "Os produtos de saúde trazem os devidos avisos legais, e incentivamos todos a consultar um profissional antes.",
+  "about_eyebrow": "Sobre nós",
+  "about_h2": "Uma empresa de marketing independente que leva as letras miúdas a sério.",
+  "about_p": "A D2 Infomakers (S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA) é uma empresa de marketing digital de performance. Promovemos produtos de informação, aplicativos e suplementos nutracêuticos como parceira afiliada de marcas e redes consolidadas. Não somos o fabricante, autor ou vendedor oficial dos produtos que promovemos — as compras são processadas e cobradas pelo proprietário de cada produto ou por seu revendedor autorizado.",
+  "contact_eyebrow": "Fale conosco",
+  "contact_h2": "Diga olá.",
+  "contact_p": "Dúvidas sobre um produto, uma compra, um reembolso, parcerias ou conformidade? Lemos todas as mensagens e as encaminhamos ao lugar certo.",
+  "contact_pill": "Entre em contato",
+  "contact_detail": "S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70<br>Av. Nove de Julho, 873 — Jardim Apolo I<br>São José dos Campos – SP, 12243-000, Brasil<br>E-mail: d2.infomakers@gmail.com",
+  "foot_privacy": "Política de Privacidade",
+  "foot_terms": "Termos de Serviço",
+  "foot_refund": "Política de Reembolso",
+  "legal_aff_h": "Divulgação de afiliado",
+  "legal_aff_p": "A D2 Infomakers é uma afiliada independente e parceira de marketing. Promovemos produtos de terceiros e podemos receber uma comissão quando uma compra é feita por meio dos nossos links ou campanhas, sem custo adicional para você. Não somos o fabricante, autor ou vendedor oficial dos produtos que promovemos; os pedidos são processados, cobrados e atendidos pelo respectivo proprietário do produto ou por seu revendedor autorizado (por exemplo, a BuyGoods).",
+  "legal_health_h": "Aviso sobre saúde e suplementos",
+  "legal_health_p": "As declarações relativas a suplementos alimentares não foram avaliadas pela Food and Drug Administration (FDA) e não têm a intenção de diagnosticar, tratar, curar ou prevenir qualquer doença. As informações deste site têm finalidade apenas educativa e não substituem o aconselhamento médico profissional. Consulte sempre um profissional de saúde qualificado antes de iniciar qualquer suplemento, programa ou mudança na sua rotina.",
+  "legal_results_h": "Aviso sobre resultados",
+  "legal_results_p": "Os resultados individuais variam e não são garantidos. Quaisquer depoimentos, exemplos ou resultados mencionados nos produtos que promovemos não são uma promessa ou garantia de que você alcançará os mesmos resultados.",
+  "copy": "© 2026 S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA · CNPJ 52.773.851/0001-70. D2 Infomakers é uma marca operada por esta empresa. Todos os direitos reservados. Todas as marcas registradas e marcas são propriedade de seus respectivos titulares."
+};
+  I18N.es = {
+  "nav_what": "Qué hacemos",
+  "nav_categories": "Categorías",
+  "nav_standards": "Estándares",
+  "nav_about": "Nosotros",
+  "nav_contact": "Contacto",
+  "hero_h1": "Llevamos buenos productos<br>a las personas<br><span class=\"grad-text\">que los estaban buscando.</span>",
+  "hero_lead": "Una empresa independiente de marketing digital que promociona productos de información, aplicaciones y suplementos de bienestar de marcas confiables, de forma responsable y con total transparencia.",
+  "hero_cta": "Cómo trabajamos ›",
+  "stmt_main": "Cada campaña que realizamos existe para presentar un producto genuinamente útil a la persona indicada.",
+  "stmt_sub": "Somos una empresa de marketing de afiliados: promocionamos productos, no los fabricamos. Sin exageraciones, sin afirmaciones infundadas y con divulgación clara en todo momento.",
+  "wd_h2": "Marketing, hecho con honestidad.",
+  "wd_1_h": "Descubrimos",
+  "wd_1_p": "Seleccionamos programas digitales comprobados, aplicaciones y productos de bienestar de marcas y redes consolidadas que merecen el respaldo de nuestro nombre.",
+  "wd_2_h": "Promocionamos",
+  "wd_2_p": "Creamos publicidad y contenido educativo que conecta cada producto con el público que ya lo está buscando, con las divulgaciones siempre a la vista.",
+  "wd_3_h": "Acompañamos",
+  "wd_3_p": "Información clara y expectativas honestas antes de la compra, y una atención ágil que dirige a cada cliente al lugar correcto después de ella.",
+  "cat_eyebrow": "Lo que promocionamos",
+  "cat_h2": "Los productos que respaldamos.",
+  "cat_1_h": "Aplicaciones y programas digitales",
+  "cat_1_p": "Aplicaciones guiadas y programas digitales paso a paso para la salud, los hábitos y el crecimiento personal.",
+  "cat_2_h": "Suplementos nutracéuticos",
+  "cat_2_p": "Vitaminas, extractos botánicos y suplementos de bienestar elaborados por fabricantes consolidados.",
+  "cat_3_h": "Contenido educativo",
+  "cat_3_p": "Guías e información que ayudan a las personas a tomar decisiones informadas y con confianza.",
+  "cat_4_h": "Socios confiables",
+  "cat_4_p": "Promocionamos a través de propietarios de productos y redes de buena reputación, incluido BuyGoods.",
+  "cat_5_h": "Publicidad conforme",
+  "cat_5_p": "Divulgaciones de afiliados alineadas con la FTC (Comisión Federal de Comercio) y afirmaciones responsables en cada página que publicamos.",
+  "cat_6_h": "Atención al cliente",
+  "cat_6_p": "Respaldamos lo que recomendamos y ayudamos a los clientes a acceder al soporte y a los reembolsos.",
+  "cat_hint": "Desplázate para explorar →",
+  "std_eyebrow": "Nuestros estándares",
+  "std_h2": "Diseñado para la confianza y el cumplimiento.",
+  "std_1_h": "Transparentes",
+  "std_1_p": "Somos un afiliado independiente y podemos ganar una comisión cuando compras a través de nuestros enlaces. Siempre lo divulgamos.",
+  "std_2_h": "Conformes",
+  "std_2_p": "Seguimos las directrices de la FTC y las reglas de cada red con la que trabajamos. Nunca hacemos afirmaciones sin fundamento.",
+  "std_3_h": "Honestos",
+  "std_3_p": "Expectativas realistas por encima de la exageración. Los resultados varían de una persona a otra, y lo decimos con claridad.",
+  "std_4_h": "Responsables",
+  "std_4_p": "Los productos de salud incluyen los avisos legales correspondientes, y recomendamos a todos consultar primero a un profesional.",
+  "about_eyebrow": "Sobre nosotros",
+  "about_h2": "Una empresa de marketing independiente que se toma en serio la letra pequeña.",
+  "about_p": "D2 Infomakers (S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA) es una empresa de marketing digital de resultados (performance). Promocionamos productos de información, aplicaciones y suplementos nutracéuticos como socio afiliado de marcas y redes consolidadas. No somos el fabricante, autor ni vendedor registrado de los productos que promocionamos; las compras son gestionadas y facturadas por el propietario de cada producto o su minorista autorizado.",
+  "contact_eyebrow": "Ponte en contacto",
+  "contact_h2": "Escríbenos.",
+  "contact_p": "¿Tienes preguntas sobre un producto, una compra, un reembolso, alianzas o cumplimiento normativo? Leemos cada mensaje y lo dirigimos al lugar correcto.",
+  "contact_pill": "Contáctanos",
+  "contact_detail": "S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70<br>Av. Nove de Julho, 873 — Jardim Apolo I<br>São José dos Campos – SP, 12243-000, Brasil<br>Correo electrónico: d2.infomakers@gmail.com",
+  "foot_privacy": "Política de Privacidad",
+  "foot_terms": "Términos del Servicio",
+  "foot_refund": "Política de Reembolsos",
+  "legal_aff_h": "Divulgación de afiliados",
+  "legal_aff_p": "D2 Infomakers es un afiliado y socio de marketing independiente. Promocionamos productos de terceros y podemos ganar una comisión cuando se realiza una compra a través de nuestros enlaces o campañas, sin costo adicional para ti. No somos el fabricante, autor ni vendedor registrado de los productos que promocionamos; los pedidos son gestionados, facturados y atendidos por el propietario del producto correspondiente o su minorista autorizado (por ejemplo, BuyGoods).",
+  "legal_health_h": "Aviso legal sobre salud y suplementos",
+  "legal_health_p": "Las declaraciones relativas a los suplementos dietéticos no han sido evaluadas por la Administración de Alimentos y Medicamentos (FDA) y no tienen como finalidad diagnosticar, tratar, curar ni prevenir ninguna enfermedad. La información de este sitio tiene únicamente fines educativos y no sustituye el consejo médico profesional. Consulta siempre a un profesional de la salud calificado antes de comenzar cualquier suplemento, programa o cambio en tu rutina.",
+  "legal_results_h": "Aviso legal sobre resultados",
+  "legal_results_p": "Los resultados individuales varían y no están garantizados. Cualquier testimonio, ejemplo o resultado mencionado en los productos que promocionamos no constituye una promesa ni garantía de que obtendrás los mismos resultados.",
+  "copy": "© 2026 S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA · CNPJ 52.773.851/0001-70. D2 Infomakers es una marca operada por esta empresa. Todos los derechos reservados. Todas las marcas comerciales y marcas son propiedad de sus respectivos dueños."
+};
+
+  // ── apply a language to every [data-i18n] node ──
+  function applyLang(lang){
+    var dict = I18N[lang] || I18N.en;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      var v = (dict && dict[k] != null) ? dict[k] : I18N.en[k];
+      if(v != null) el.innerHTML = v;
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.title = ({
+      en: 'D2 Infomakers — Digital products & wellness, promoted responsibly',
+      pt: 'D2 Infomakers — Produtos digitais e bem-estar, promovidos com responsabilidade',
+      es: 'D2 Infomakers — Productos digitales y bienestar, promocionados con responsabilidad'
+    })[lang] || document.title;
+    document.querySelectorAll('.lang button').forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+    });
+    try{ localStorage.setItem('d2lang', lang); }catch(e){}
+  }
+
+  var saved; try{ saved = localStorage.getItem('d2lang'); }catch(e){}
+  var initLang = (saved && I18N[saved]) ? saved : 'en';
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); });
+  });
+  applyLang(initLang);
+
   // reveal on scroll (progressive enhancement — content is visible without JS)
   var els=document.querySelectorAll('.r');
   if('IntersectionObserver' in window){
