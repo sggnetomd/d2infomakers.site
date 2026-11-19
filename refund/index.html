@@ -179,6 +179,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 .doc .lead{font-size:1.12rem;color:var(--ink-2);margin-bottom:28px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
 .contact-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg)}
+.contact-card.wide{grid-column:1 / -1}
+.contact-card a[href^="tel:"]{white-space:nowrap}
 .contact-card h2{margin:0 0 8px;font-size:1.05rem;letter-spacing:.02em}
 .contact-card p{margin:0 0 6px;font-weight:600;overflow-wrap:anywhere}
 .contact-card .muted{font-weight:400;color:var(--ink-2);font-size:15px;margin:0}
@@ -225,7 +227,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
   .brand .logo{width:26px;height:26px}
   .header-in{gap:10px}
 }
-@media (max-width:380px){.lang button{padding:6px 8px}.hero-actions .btn{flex:1 1 100%}}
+@media (max-width:380px){.lang button{padding:6px 7px}.hero-actions .btn{flex:1 1 100%}.brand{font-size:15px;gap:8px}.brand .logo{width:22px;height:22px}.menu-btn{width:38px;height:38px}.header-tools,.header-in{gap:8px}}
+.brand .logo{flex:none}
 </style>
 </head>
 <body>

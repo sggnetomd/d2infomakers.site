@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js');</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"D2 Infomakers","legalName":"S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA","taxID":"52.773.851/0001-70","url":"https://d2infomakers.site/","email":"contact@d2infomakers.site","address":{"@type":"PostalAddress","streetAddress":"Av. Nove de Julho, 873, Jardim Apolo I","addressLocality":"São José dos Campos","addressRegion":"SP","postalCode":"12243-000","addressCountry":"BR"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"D2 Infomakers","legalName":"S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA","taxID":"52.773.851/0001-70","url":"https://d2infomakers.site/","email":"contact@d2infomakers.site","telephone":"+55 14 99119-3892","address":{"@type":"PostalAddress","streetAddress":"Av. Nove de Julho, 873, Jardim Apolo I","addressLocality":"São José dos Campos","addressRegion":"SP","postalCode":"12243-000","addressCountry":"BR"}}</script>
 <style>
 :root{--bg:#FBF7F2;--surface:#FFFFFF;--ink:#201A1C;--ink-2:#5C5257;--line:#EADFD5;--rose:#E05A6E;--rose-ink:#B8364D;--btn:#C8435A;--btn-hover:#B23A50;--amber:#F0A868;--tint:#FCE9EC;--panel:#211A1D;--panel-2:#2C2327;--on-panel:#F7EFEA;--on-panel-2:#C9BCB6;--radius:22px;--shadow:0 1px 2px rgba(32,26,28,.05),0 12px 32px -12px rgba(32,26,28,.16);--display:'Bricolage Grotesque','Iowan Old Style',Georgia,serif;--text:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
 *,*::before,*::after{box-sizing:border-box}
@@ -180,6 +180,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 .doc .lead{font-size:1.12rem;color:var(--ink-2);margin-bottom:28px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
 .contact-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg)}
+.contact-card.wide{grid-column:1 / -1}
+.contact-card a[href^="tel:"]{white-space:nowrap}
 .contact-card h2{margin:0 0 8px;font-size:1.05rem;letter-spacing:.02em}
 .contact-card p{margin:0 0 6px;font-weight:600;overflow-wrap:anywhere}
 .contact-card .muted{font-weight:400;color:var(--ink-2);font-size:15px;margin:0}
@@ -226,7 +228,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
   .brand .logo{width:26px;height:26px}
   .header-in{gap:10px}
 }
-@media (max-width:380px){.lang button{padding:6px 8px}.hero-actions .btn{flex:1 1 100%}}
+@media (max-width:380px){.lang button{padding:6px 7px}.hero-actions .btn{flex:1 1 100%}.brand{font-size:15px;gap:8px}.brand .logo{width:22px;height:22px}.menu-btn{width:38px;height:38px}.header-tools,.header-in{gap:8px}}
+.brand .logo{flex:none}
 </style>
 </head>
 <body>

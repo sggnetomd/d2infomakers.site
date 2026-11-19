@@ -179,6 +179,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 .doc .lead{font-size:1.12rem;color:var(--ink-2);margin-bottom:28px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
 .contact-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg)}
+.contact-card.wide{grid-column:1 / -1}
+.contact-card a[href^="tel:"]{white-space:nowrap}
 .contact-card h2{margin:0 0 8px;font-size:1.05rem;letter-spacing:.02em}
 .contact-card p{margin:0 0 6px;font-weight:600;overflow-wrap:anywhere}
 .contact-card .muted{font-weight:400;color:var(--ink-2);font-size:15px;margin:0}
@@ -225,7 +227,8 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
   .brand .logo{width:26px;height:26px}
   .header-in{gap:10px}
 }
-@media (max-width:380px){.lang button{padding:6px 8px}.hero-actions .btn{flex:1 1 100%}}
+@media (max-width:380px){.lang button{padding:6px 7px}.hero-actions .btn{flex:1 1 100%}.brand{font-size:15px;gap:8px}.brand .logo{width:22px;height:22px}.menu-btn{width:38px;height:38px}.header-tools,.header-in{gap:8px}}
+.brand .logo{flex:none}
 </style>
 </head>
 <body>
@@ -265,6 +268,11 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 <p class="muted">Customer support, billing, cancellations, refunds and privacy requests.</p>
 </div>
 <div class="contact-card">
+<h2>Phone</h2>
+<p><a href="tel:+5514991193892">+55 14 99119-3892</a></p>
+<p class="muted">Customer support line in Brazil.</p>
+</div>
+<div class="contact-card wide">
 <h2>Company</h2>
 <p>S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70</p>
 <p class="muted">Av. Nove de Julho, 873, Jardim Apolo I, São José dos Campos – SP, 12243-000, Brazil</p>
@@ -296,6 +304,11 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 <p class="muted">Suporte ao cliente, cobrança, cancelamentos, reembolsos e pedidos de privacidade.</p>
 </div>
 <div class="contact-card">
+<h2>Telefone</h2>
+<p><a href="tel:+5514991193892">+55 14 99119-3892</a></p>
+<p class="muted">Linha de suporte ao cliente no Brasil.</p>
+</div>
+<div class="contact-card wide">
 <h2>Empresa</h2>
 <p>S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70</p>
 <p class="muted">Av. Nove de Julho, 873, Jardim Apolo I, São José dos Campos – SP, 12243-000, Brasil</p>
@@ -327,6 +340,11 @@ html[lang="en"] .doc[data-lang="en"],html[lang="pt"] .doc[data-lang="pt"],html[l
 <p class="muted">Soporte al cliente, cobros, cancelaciones, reembolsos y solicitudes de privacidad.</p>
 </div>
 <div class="contact-card">
+<h2>Teléfono</h2>
+<p><a href="tel:+5514991193892">+55 14 99119-3892</a></p>
+<p class="muted">Línea de atención al cliente en Brasil.</p>
+</div>
+<div class="contact-card wide">
 <h2>Empresa</h2>
 <p>S GARCIA DE GOES NETO NEGOCIOS DIGITAIS LTDA<br>CNPJ 52.773.851/0001-70</p>
 <p class="muted">Av. Nove de Julho, 873, Jardim Apolo I, São José dos Campos – SP, 12243-000, Brasil</p>
